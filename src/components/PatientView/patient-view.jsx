@@ -53,7 +53,7 @@ export const PatientView = (props) => {
         </p>
       </div>
       <CardList
-        takeSuggestion={() => { }}
+        takeSuggestion={() => { alert("Hello! I'm glad you like my suggestion!");}}
       />
     </div>
   );
