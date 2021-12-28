@@ -10,8 +10,9 @@ import styles from "./patient-view.css";
 import cdsExecution from "../../middleware/cds-execution";
 
 import store from '../../store/store'; //DH
+import { addRaceAndEthnicity } from "../../actions/patient-actions";
 
-import { takeSuggestion } from "../../actions/medication-select-actions"; //DH
+// import { takeSuggestion } from "../../actions/medication-select-actions"; //DH
 
 const propTypes = {
   /**
@@ -52,7 +53,8 @@ export const PatientView = (props) => {
         </p>
       </div>
       <CardList
-        takeSuggestion={() => { console.log(store.getState());}} //DH
+        takeSuggestion={() => { store.dispatch(addRaceAndEthnicity());}} //DH
+        // takeSuggestion={() => { console.log(store.getState());}} //DH
         // takeSuggestion={this.props.takeSuggestion}
       />
     </div>

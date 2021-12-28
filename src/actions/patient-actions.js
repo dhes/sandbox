@@ -22,3 +22,12 @@ export function signalFailurePatientRetrieval() {
     type: types.GET_PATIENT_FAILURE,
   };
 }
+
+/**
+ * Adds race and ethnicity extension to current patient
+ */
+export function addRaceAndEthnicity() {
+  return {
+    type: types.ADD_RACE_AND_ETHNICITY,
+  };
+}

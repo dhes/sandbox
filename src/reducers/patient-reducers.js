@@ -64,6 +64,12 @@ const patientReducers = (state = initialState, action) => {
         return state;
       }
 
+      // Add race and ethnicity to current patient as a step toward implementing a takeSuggestion // DH
+      case types.ADD_RACE_AND_ETHNICITY: { // DH
+        alert("Add race and ethnicity");
+        return state; // DH
+      }
+
       default: {
         return state;
       }

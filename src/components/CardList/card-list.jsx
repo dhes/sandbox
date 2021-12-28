@@ -66,7 +66,7 @@ export class CardList extends Component {
    * @param {*} serviceUrl - CDS service endpoint URL
    */
   takeSuggestion(suggestion, cardUUID, serviceUrl) {
-    alert("I'm taking your suggestion " + suggestion.uuid + " "+cardUUID); //DH
+    // alert("I'm taking your suggestion " + suggestion.uuid + " "+cardUUID); //DH
     if (!this.props.isDemoCard) {
       if (suggestion.label) {
         if (suggestion.uuid && cardUUID) {
@@ -85,7 +85,7 @@ export class CardList extends Component {
         }
 
         this.props.takeSuggestion(suggestion);
-        alert("I took your suggestion"); //DH
+        // alert("I took your suggestion"); //DH
       } else {
         console.error('There was no label on this suggestion', suggestion);
       }

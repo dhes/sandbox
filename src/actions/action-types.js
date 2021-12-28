@@ -74,3 +74,6 @@ export const DISMISS_CARD = 'DISMISS_CARD';
 export const LAUNCH_SMART_APP = 'LAUNCH_SMART_APP';
 
 export const EXPLICIT_HOOK_TRIGGER = 'EXPLICIT_HOOK_TRIGGER ';
+
+// Update patient
+export const ADD_RACE_AND_ETHNICITY = 'ADD_RACE_AND_ETHNICITY';
